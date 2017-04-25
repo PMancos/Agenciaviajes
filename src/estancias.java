@@ -113,7 +113,7 @@ public class estancias extends presupuestos{
                 precioTotal=PRECIOCAPITAL+15;
             }
         }
-        return precioTotal+CGestion;
+        return (precioTotal*getNumPasajeros())*getNumDias()+CGestion;
     }
 
     @Override
